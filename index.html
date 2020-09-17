@@ -5,31 +5,31 @@
       body {
         font-family: Monospace;
         margin: 0;
+        background-color: #808080;
+        color: #F0FFFF;
       }
-      .Header {
-        border: 5px outset red;
-        text-align: center;
-        background-color: lightblue;
+      .Title {
+        background-color: #EBEBEB;
       }
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         width: 25%;
-        background-color: #f1f1f1;
+        background-color: #2F4F4F;
         position: fixed;
         height: 100%;
         overflow: auto;
       }
       li a {
         display: block;
-        color: #000;
+        color: #F0FFFF;
         padding: 8px 16px;
         text-decoration: none;
         font-size: 50;
       }
       li a:hover:not(.active) {
-        background-color: #555;
+        background-color: #1E90FF;
         color: white;
       }
     </style>
@@ -48,7 +48,9 @@
     </ul>
     <div style="margin-left:25%;padding:1px 16px;height:1000px;">
       <center>
-        <h1>Welcome to Confused Games!</h1>
+        <div class="Title">
+          <h1>Welcome to Confused Games!</h1>
+        </div>
       </center>
         <font size="+2"><p>This website include games that I made myself(Flappy Bird, Runner, Runner-Hard), and open-source games(Galaga, Connect Four, Tower of Hanoi, Tic-Tac-Toe). The games that I made myself will receive updates occasionally. I hope  you enjoy your experience on my website!
         </p></font>
