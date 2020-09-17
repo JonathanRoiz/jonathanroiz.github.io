@@ -1,149 +1,60 @@
 <!DOCTYPE html>
-<center>
 <html>
-<head>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'UA-137685888-1', { 'optimize_id': 'GTM-W65XFNX'});
-</script>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Games</title>
-<style>
-   
-   body {
-    background-repeat:no-repeat;
-    background-size:50%;
-    background-color: #4dd2ff;
-    background-position: center 0;
-  }
-   
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
-
-/* Style the tab */
-.tab {
-  float: left;
-  border: 2px solid #000000;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 472px;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: 1px solid #000000; /* was None */
-  outline: none;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 18px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 2px solid #000000;
-  width: 70%;
-  border-left: none;
-  height: 472px;
-}
-</style>
-</head>
-<body>
-   
-<h2>Games</h2>
-  
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Galaga')" id="defaultOpen">Galaga</button>
-  <button class="tablinks" onclick="openCity(event, 'Connect-Four')">Connect Four</button>
-  <button class="tablinks" onclick="openCity(event, 'Tower-of-Hanoi')">Tower of Hanoi</button>
-  <button class="tablinks" onclick="openCity(event, 'Tic-Tac-Toe')">Tic-Tac-Toe</button>
-  <button class="tablinks" onclick="openCity(event, 'Flappy-Bird')">Flappy Bird</button>
-  <button class="tablinks" onclick="openCity(event, 'Runner')">Runner</button>
-  <button class="tablinks" onclick="openCity(event, 'Runner:Hard Mode')">Runner:Hard Mode</button>
-</div>
-
-<div id="Galaga" class="tabcontent">
-  <h3>Galaga</h3>
-  <p>Galaga is a classic space shooter game, where you shoot aliens to beat the levels. The goal is to get the highest score possible. Play on mobile for the best experience. This game gets frequent updates!</p>
-  <a href="Galaga">Galaga</a>
-</div>
-  
-<div id="Connect-Four" class="tabcontent">
-  <h3>Connect Four</h3>
-  <p>A two player Connect Four game. Get four in a row to win!</p>
-  <a href="Connect-Four">Connect Four</a>
-</div>
-
-<div id="Tower-of-Hanoi" class="tabcontent">
-  <h3>Tower of Hanoi</h3>
-  <p>Move the tower to the last peg to win. A bigger block cannot be placed on a smaller block.</p>
-  <a href="Tower-of-Hanoi">Tower of Hanoi</a>
-</div>
-
-<div id="Tic-Tac-Toe" class="tabcontent">
-  <h3>Tic-Tac-Toe</h3>
-  <p>A two player game where you get three X's or three O's in a row to win.</p>
-  <a href="Tic-Tac-Toe">Tic-Tac-Toe</a>
-</div>
-   
-<div id="Flappy-Bird" class="tabcontent">
-  <h3>Flappy Bird</h3>
-  <p>Hold the space bar to go up, and let go of it to go down.</p>
-  <a href="Flappy-Bird">Flappy Bird</a>
-</div>
-   
-<div id="Runner" class="tabcontent">
-  <h3>Easy 3d Game</h3>
-  <p>Get a score of 530 to win!</p>
-  <a href="Easy3dGame">Easy 3d Game</a>
-</div>
-   
-<div id="Runner:Hard Mode" class="tabcontent">
-  <h3>Hard 3d Game</h3>
-  <p>Get a score of 530 to win! Don't run into walls, or you will restart.</p>
-  <a href="Hard3dGame">Hard 3d Game</a>
-</div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-    <!-- This is the start of the blog section of the page. -->
-</body>
-</html> 
-</center>
+  <head>
+    <style src="style.css">
+      body {
+        font-family: Monospace;
+        margin: 0;
+      }
+      .Header {
+        border: 5px outset red;
+        text-align: center;
+        background-color: lightblue;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-size: 50;
+      }
+      li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <ul>
+      <font size= "+2">
+        <li><a href="confusedgames.com/Galaga/">Galaga</a></li>
+        <li><a href="confusedgames.com/Connect-Four/">Connect Four</a></li>
+        <li><a href="confusedgames.com/Tower-Of-Hanoi/">Tower of Hanoi</a></li>
+        <li><a href="confusedgames.com/Tic-Tac-Toe/">Tic-Tac-Toe</a></li>
+        <li><a href="confusedgames.com/Flappy-Bird/">Flappy Bird</a></li>
+        <li><a href="confusedgames.com/Runner/">Runner</a></li>
+        <li><a href="confusedgames.com/Runner-Hard/">Runner-Hard</a></li>
+      </font>
+    </ul>
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+      <center>
+        <h1>Welcome to Confused Games!</h1>
+      </center>
+        <font size="+2"><p>This website include games that I made myself(Flappy Bird, Runner, Runner-Hard), and open-source games(Galaga, Connect Four, Tower of Hanoi, Tic-Tac-Toe). The games that I made myself will receive updates occasionally. I hope  you enjoy your experience on my website!
+        </p></font>
+    </div>
+  </head>
+  <body>
+    <script src="script.js"></script>
+  </body>
+</html>
